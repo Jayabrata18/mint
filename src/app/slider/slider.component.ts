@@ -23,7 +23,7 @@ export class SliderComponent implements OnInit{
         this.index = (this.index === this.slides.length - 1) ? 0 : this.index + 1;
         this.slides[this.index].classList.add('active');
         this.slider.style.transform = `translateX(-${this.index * 100}%)`
-      },4500)
+      },6000)
     }
 
 
