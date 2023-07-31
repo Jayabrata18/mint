@@ -10,12 +10,12 @@
         <div class="menu-container">
             <img src="../../assets/images/close.png" (click)="openMenu()">
             <div class="btn-div">
-                <a> HOME </a>
-                <a> ABOUT US </a>
+                <a [routerLink]="['/']"> HOME </a>
+                <a [routerLink]="['about']"> ABOUT US </a>
                 <a> SHROOMIEVERSE </a>
             </div>
             <div class="btn-div">
-                <a> MINT </a>
+                <a [routerLink]="['/mint']"> MINT </a>
                 <a> ROADMAP </a>
                 <a> BRIDGE </a>
             </div>
