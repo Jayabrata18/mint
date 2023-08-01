@@ -9,6 +9,7 @@ import { SliderComponent } from './slider/slider.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { MintComponent } from './mint/mint.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MintComponent } from './mint/mint.component';
     SliderComponent,
     FooterComponent,
     AboutComponent,
-    MintComponent
+    MintComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,

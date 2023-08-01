@@ -1,0 +1,21 @@
+.container{
+    display: inline-flex;
+    flex-direction: row;
+    background-color: white;
+    margin: auto;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    input{
+        border: none;
+        width: 200px;
+        &:focus-visible{
+            border: none;
+            outline: none;
+        }
+    }
+    img{
+        height: 20px;
+    }
+}
