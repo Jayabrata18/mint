@@ -136,3 +136,9 @@
     display: flex;
     flex-direction: row;
 }
+
+@media only screen and (min-width: 200px) and (max-width: 420px) {
+    .inline{
+        flex-direction: column;
+    }
+}
