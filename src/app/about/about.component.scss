@@ -141,4 +141,13 @@
     .inline{
         flex-direction: column;
     }
+
+    .sub-menu{
+        &.opened{
+            max-height: 570px;
+        }
+        .menu-container{
+            flex-direction: column;
+        }
+    }
 }
