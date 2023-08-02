@@ -117,3 +117,24 @@
     width: 670px;
     padding-bottom: 100px;
 }
+
+
+d-none{
+    display: none;
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 420px) {
+    .container{
+        .icons{
+            img{
+                height: 35px;
+            }
+        }
+    }
+    .content-body img {
+        height: 60px;
+        width: 280px;
+        padding-bottom: 100px;
+    }
+}

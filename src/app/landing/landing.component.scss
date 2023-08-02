@@ -34,3 +34,26 @@
         padding: 2vw;
     }
 }
+
+
+@media only screen and (min-width: 200px) and (max-width: 420px) {
+    .container{
+        .inline-container{
+            flex-direction: column;
+        }
+        .text-container{
+            width: 200px;
+            span{
+                font-size: 13px;
+                font-family: JokeyOne;
+            }
+            img{
+                position: absolute;
+                height: 30px;
+                right: 20px;
+                bottom: 6px;
+            }
+        }
+    }
+
+}
