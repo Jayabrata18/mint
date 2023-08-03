@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { MintComponent } from './mint/mint.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
+import { MarqueeComponent } from './marquee/marquee.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RoadmapComponent } from './roadmap/roadmap.component';
     AboutComponent,
     MintComponent,
     SearchBarComponent,
-    RoadmapComponent
+    RoadmapComponent,
+    MarqueeComponent
   ],
   imports: [
     BrowserModule,

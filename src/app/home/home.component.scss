@@ -51,10 +51,23 @@
 }
 
 
+.marquee-element{
+    position: absolute;
+    display: block;
+    height: 100%;
+    top: 30%;
+    z-index: 1;
+}
+
+
 .header {
     display: flex;
     justify-content: center;
     background: linear-gradient(180deg, #370C59 0%, #ABCCFF 100%);
+    position: relative;
+    img{
+        z-index: 2;
+    }
 }
 
 .header img {
