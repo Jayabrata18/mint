@@ -12,9 +12,28 @@
         transition: max-height 0.5s;
         overflow: hidden;
         &.opened{
-            max-height: 270px;
+            max-height: 900px;
         }
-
+        .ip-container{
+            display: flex;
+            flex-direction: row;
+            padding-left: 20px;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+            span{
+                padding: 0 10px;
+            }
+            .icons{
+                padding-right: 20px;
+                img{
+                    height: 30px;
+                    padding: 5px;
+                }
+            }
+        }
         .menu-container{
             display: flex;
             flex-direction: row;
@@ -65,6 +84,7 @@
     justify-content: center;
     background: linear-gradient(180deg, #370C59 0%, #ABCCFF 100%);
     position: relative;
+    overflow: hidden;
     img{
         z-index: 2;
     }
@@ -150,6 +170,9 @@ d-none{
             }
             .menu-container{
                 flex-direction: column;
+            }
+            .ip-container{
+                display: none;
             }
         }
     }
