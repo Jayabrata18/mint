@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./mint.component.scss']
 })
 export class MintComponent {
-
+  
 }
