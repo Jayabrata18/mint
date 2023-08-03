@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { MintComponent } from './mint/mint.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { RoadmapComponent } from './roadmap/roadmap.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     FooterComponent,
     AboutComponent,
     MintComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    RoadmapComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { MintComponent } from './mint/mint.component';
+import { RoadmapComponent } from './roadmap/roadmap.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: "mint",
     component: MintComponent
+  },
+  {
+    path:"roadmap",
+    component: RoadmapComponent
   }
 ];
 
