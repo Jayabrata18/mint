@@ -137,7 +137,12 @@
                 background-color: #a490b3;
                 text-decoration: none;
                 color: inherit;
+                &.disable{
+                  opacity: 0.5;  
+                }
             }
+
+            
         }
     }
 }
