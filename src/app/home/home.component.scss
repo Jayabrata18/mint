@@ -3,7 +3,16 @@
     background-image: url(../../assets/images/landing-page-1.png);
     background-size: 100% 100%;
     position: relative;
-
+    z-index: 1;
+    .svg-container{
+        height: 500px;
+        width: 100%;
+        background-image: url("../../assets/images/Shroomie-jump1.svg");
+        background-size: 170% 100%;
+        position: absolute;
+        z-index: -1;
+        bottom: 100px;
+    }
     .sub-menu {
         width: 100%;
         background-image: linear-gradient(180deg, #370C59 0%, #ABCCFF 100%);
