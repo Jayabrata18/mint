@@ -158,6 +158,13 @@
         height: 100vh;
         width: 100%;
     }
+
+    #large{
+        display: block;
+    }
+    #small{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 420px) {
@@ -172,6 +179,15 @@
 
         .menu-container {
             flex-direction: column;
+        }
+    }
+
+    .roadmap-container{
+        #large{
+            display: none;
+        }
+        #small{
+            display: block;
         }
     }
 }
