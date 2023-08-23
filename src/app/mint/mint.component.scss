@@ -48,7 +48,10 @@
         justify-content: space-between;
         padding: 40px;
         box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, .2);
-
+        overflow-x: scroll;
+        button{
+            display: none;
+        }
         img {
             height: 250px;
             margin: 30px;
@@ -86,13 +89,16 @@
         width: 100%;
 
         .cards {
-            max-width: 1240px;
+            max-width: 1400px;
             margin: 0 auto;
             display: grid;
             gap: 1rem;
+            place-items: center;
             background-color: #b1eeff;
             border-radius: 10px;
             margin-top: 20px;
+            grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+            padding: 0 10px;
         }
 
         .card {
@@ -102,14 +108,39 @@
     }
 }
 
-@media (min-width: 600px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 900px) {
-    .cards {
-        grid-template-columns: repeat(6, 1fr);
+@media only screen and (min-width: 200px) and (max-width: 420px) {
+    .container{
+        .header{
+            .btn{
+                font-size: 20px;
+                padding: 0 2px;
+            }
+        }
+        .content{
+            padding: 10px;
+            .mintable{
+                position: relative;
+                align-items: center;
+                justify-content: center;
+                .slide{
+                    margin: 0;
+                    display: none;
+                }
+                button{
+                    position: absolute;
+                    display: block;
+                    height: 35px;
+                    width: 35px;
+                    border-radius: 50%;
+                    border: none;
+                }
+                #right{
+                    right: 10px;
+                }
+                #left{
+                    left: 10px;
+                }
+            }
+        }
     }
 }

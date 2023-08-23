@@ -11,9 +11,11 @@
 
     <div class="content">
         <div class="mintable">
-            <img src="../../assets/images/blank_mint.png">
-            <img src="../../assets/images/blank_mint.png">
-            <img src="../../assets/images/blank_mint.png">
+            <button id="left" (click)="plusDivs(-1)">&#10094;</button>
+            <img class="slide" src="../../assets/images/blank_mint.png">
+            <img class="slide" src="../../assets/images/blank_mint.png">
+            <img class="slide" src="../../assets/images/blank_mint.png">
+            <button id="right" (click)="plusDivs(1)">&#10095;</button>
         </div>
         <div class="txt-container">
             <span>You are eligible for: 1 General Mint / 0 Free Mints / 1 Discounted Mint</span>
