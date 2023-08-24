@@ -1,0 +1,79 @@
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <img src="../../assets/images/logo.png" id="icon">
+            <img src="../../assets/images/shroomiezamanitaonobg-2@2x.png" id="name">
+        </div>
+        <button class="btn" (click)="openMenu()"> MENU </button>
+    </div>
+    <div class="sub-menu">
+        <div class="menu-container">
+            <img src="../../assets/images/close.png" (click)="openMenu()">
+            <div class="btn-div">
+                <a [routerLink]="['/']"> HOME </a>
+                <a [routerLink]="['about']"> ABOUT US </a>
+                <a class="disable"> SHROOMIEVERSE </a>
+            </div>
+            <div class="btn-div">
+                <a [routerLink]="['/mint']"> MINT </a>
+                <a [routerLink]="['/roadmap']"> ROADMAP </a>
+                <a class="disable"> BRIDGE </a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="heading">
+            <span>{{"about" | uppercase }}</span>
+        </div>
+
+        <div class="div about">
+            <span class="txt-span">
+                Welcome to Shroomiez fellow friend. Shroomiez is an NFT collection, community and platform which:
+                <ul>
+                    <li>Enables holders to decide on what is featured in the Shroomieverse</li>
+                    <li>Features access to the most trusted dApps and NFT collections</li>
+                    <li>Incentivizes the creation and reproduction of high quality content</li>
+                </ul>
+                Shroomiez will be treasury-backed thanks to Beramarket. Liquid-backing means higher trading liquidity,
+                and high liquidity means a more stable market for the NFT collection.
+            </span>
+        </div>
+
+        <div class="heading">
+            <span>{{ "specs" | uppercase }}</span>
+        </div>
+
+        <div class="div specs inline">
+            <span class="txt-span">
+                Each Shroomiez is uniquely hand-drawn, featuring realistic attributes such as the Species itself, the
+                Cap and the Spiking Activity: all of which come from 36 different mushroom species.<br><br>
+                The backgrounds are also hand-drawn, and are visual representations of primordial sound frequencies --
+                tuning each Shroomiez to its natural environment.
+            </span>
+
+            <div class="img-table">
+                <table>
+                    <tr>
+                        <td><img src="../../assets/images/home2.JPG"></td>
+                        <td><img src="../../assets/images/home3.JPG"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/images/home4.JPG"></td>
+                        <td><img src="../../assets/images/home5.JPG"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="heading">
+            <span>{{"the team" | uppercase}}</span>
+        </div>
+        <div class="div team">
+            <span class="txt-span">
+                Shroomiez was launched with the support of quite a few anonymous Miladys, Beras, BGANs, Tubbys, et many more passionate NFT holders.<br><br>
+                With an ample variety of personalities and backgrounds, from ex-JPM Quants, McKinsey (Global) Partners, VC & hedge fund Managers and tech-savvy celebrities, Shroomiez is well positioned to disrupt the NFT space and the physical world with a never-seen-before NFT-to-Physical approach.<br><br>
+                More details on treasury multi-sig and official management will be revealed once Shroomiez is fully incorporated and legally covered.
+            </span>
+        </div>
+    </div>
+</div>

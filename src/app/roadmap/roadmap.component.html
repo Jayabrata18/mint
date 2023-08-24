@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <img src="../../assets/images/logo.png" id="icon">
+            <img src="../../assets/images/shroomiezamanitaonobg-2@2x.png" id="name">
+        </div>
+        <button class="btn" (click)="openMenu()"> MENU </button>
+    </div>
+    <div class="sub-menu">
+        <div class="menu-container">
+            <img src="../../assets/images/close.png" (click)="openMenu()">
+            <div class="btn-div">
+                <a [routerLink]="['/']"> HOME </a>
+                <a [routerLink]="['/about']"> ABOUT US </a>
+                <a class="disable"> SHROOMIEVERSE </a>
+            </div>
+            <div class="btn-div">
+                <a [routerLink]="['/mint']"> MINT </a>
+                <a [routerLink]="['/roadmap']"> ROADMAP </a>
+                <a class="disable"> BRIDGE </a>
+            </div>
+        </div>
+    </div>
+    <div class="roadmap-container">
+        <img src="../../assets/images/roadmap.png" alt="" id="large">
+        <img src="../../assets/images/roadmap_mobile.png" alt="" id="small">
+    </div>
+</div>

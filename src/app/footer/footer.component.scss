@@ -1,0 +1,145 @@
+.container {
+    background-image: linear-gradient(180deg, #b3f0ff, #ffffff);
+    .inline-container {
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-top: 5px solid #fff484;
+        border-bottom: 5px solid #fff484;
+    }
+    .btn-container{
+        width: 100%;
+        height: 300px;
+        background: url("../../assets/images/wormhole1.jpeg");
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            height: 125px;
+            width: 350px;
+            border-radius: 70px;
+            border: none;
+            background-color: #f5c98e;
+        }
+        span{
+            font-size: 35px;
+            font-family: IrishGrover;
+        }
+    }
+    .text-container {
+        position: relative;
+        background-color: #2576e0;
+        width: 425px;
+        padding: 20px;
+        padding-bottom: 40px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, .2);
+
+        span {
+            font-size: 25px;
+            font-family: JokeyOne;
+        }
+
+        img {
+            position: absolute;
+            height: 60px;
+            right: 20px;
+            bottom: 10px;
+        }
+    }
+
+    .img-container {
+        img {
+            height: 300px;
+        }
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        background-color: #2576e0;
+        justify-content: space-between;
+        .left{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            span{
+                padding-bottom: 13px;
+                font-size: 18px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .icons{
+        padding: 10px;
+        img{
+            height: 40px;
+            padding: 3px;
+        }
+        
+    }
+    span{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 420px){
+    .container{
+        .inline-container{
+            flex-direction: column;
+        }
+        .text-container{
+            width: 220px;
+            padding: 10px;
+            padding-bottom: 20px;
+            span{
+                font-size: 15px;
+            }
+            img{
+                height: 20px;
+                right: 10px;
+            }
+        }
+        .img-container{
+            img{
+                height: 150px;
+            }
+        }
+        .footer-container{
+            flex-direction: column;
+            .left{
+                display: flex;
+                align-items: center;
+            }
+            .right{
+                .icons{
+                    img{
+                        height: 30px;
+                    }
+                }
+            }
+        }
+        .btn-container{
+            button{
+                height: 100px;
+                width: 225px;
+            }
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="header">
+        <img src="../../assets/images/logo.png">
+        <app-marquee class="marquee-element"></app-marquee>
+    </div>
+    <div style="width: 100%;height: 10px;background-color: #fff484;"></div>
+    <div class="sub-menu">
+        <div class="menu-container">
+            <img src="../../assets/images/close.png" (click)="openMenu()">
+            <div class="btn-div">
+                <a [routerLink]="['/']"> HOME</a>
+                <a [routerLink]="['about']"> ABOUT US </a>
+                <a class="disable"> SHROOMIEVERSE </a>
+            </div>
+            <div class="btn-div">
+                <a [routerLink]="['/mint']"> MINT </a>
+                <a [routerLink]="['/roadmap']"> ROADMAP </a>
+                <a class="disable"> BRIDGE </a>
+            </div>
+        </div>
+        <div class="ip-container">
+            <div>
+                <a href=""><span class="heading"> {{ 'terms of use' | uppercase }}</span></a>
+                <a href=""><span class="heading"> {{ 'privacy policy' | uppercase }}</span></a>
+                <a href=""><span class="heading"> {{ 'ip rights' | uppercase }}</span></a>
+            </div>
+
+            <div class="icons">
+                <a href="https://twitter.com/ShroomiezNFTs" target="_blank"><img src="../../assets/images/twitter.png"
+                        alt=""></a>
+                <a href="https://www.instagram.com/shroomieznfts/" target="_blank"><img src="../../assets/images/ig.png"
+                        alt=""></a>
+                <a href="https://discord.gg/ecG6ChgKwx" target="_blank"><img src="../../assets/images/discord.png"
+                        alt=""></a>
+                <a href="https://t.me/+Tq2c14tuOzA3YWM0" target="_blank"><img src="../../assets/images/telegram.png"
+                        alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <button class="btn" (click)="openMenu()"> MENU </button>
+        <div class="icons">
+            <a href="https://twitter.com/ShroomiezNFTs" target="_blank"><img src="../../assets/images/twitter.png"
+                    alt=""></a>
+            <a href="https://www.instagram.com/shroomieznfts/" target="_blank"><img src="../../assets/images/ig.png"
+                    alt=""></a>
+            <a href="https://discord.gg/ecG6ChgKwx" target="_blank"><img src="../../assets/images/discord.png"
+                    alt=""></a>
+            <a href="https://t.me/+Tq2c14tuOzA3YWM0" target="_blank"><img src="../../assets/images/telegram.png"
+                    alt=""></a>
+        </div>
+    </div>
+
+    <!-- <div class="svg-container">
+        
+    </div> -->
+
+
+    <div class="content-body">
+        <img src="../../assets/images/shroomiez-amanitaO-nobg.png" class="logo">
+
+        <a href="https://airtable.com/appp0IUU1jOhW39Nv/shrvuZZuKzt5O8hNy/" target="_blank ">
+            <!-- href="#home" -->
+            <button>
+                <span> Press To Enter Shroomlist </span>
+            </button>
+        </a>
+    </div>
+</div>
+<app-landing id="home"></app-landing>
+<app-footer></app-footer>

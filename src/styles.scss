@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+@font-face {
+    font-family: JokeyOne;
+    src: url('./assets/fonts/JockeyOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: IrishGrover;
+    src: url('./assets/fonts/IrishGrover-Regular.ttf');
+}
+
+
+.heading{
+    font-family: JokeyOne;
+    font-size: 30px;
+    color: #ffffff;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 0 4px 4px rgba(0,0,0,.25);
+}

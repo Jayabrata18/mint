@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="header">
+        <a [routerLink]="['/']">
+            <div class="logo">
+                <img src="../../assets/images/logo.png" id="icon">
+                <img src="../../assets/images/shroomiezamanitaonobg-2@2x.png" id="name">
+            </div>
+        </a>
+        <button class="btn" onclick="connectWallet()"> Connect Wallet </button>
+    </div>
+
+    <div class="content">
+        <div class="mintable">
+            <button id="left" (click)="plusDivs(-1)">&#10094;</button>
+            <img class="slide" src="../../assets/images/blank_mint.png">
+            <img class="slide" src="../../assets/images/blank_mint.png">
+            <img class="slide" src="../../assets/images/blank_mint.png">
+            <button id="right" (click)="plusDivs(1)">&#10095;</button>
+        </div>
+        <div class="txt-container">
+            <span>You are eligible for: 1 General Mint / 0 Free Mints / 1 Discounted Mint</span>
+        </div>
+        <div class="btn-container">
+            <button class="heading" onclick="mintNFT()"> Mint Now</button>
+        </div>
+        <div class="minted-container">
+            <span class="heading">Latest Shroomiez Minted</span>
+            <div class="cards">
+                <img src="../../assets/images/home2.JPG" class="card">
+                <img src="../../assets/images/home3.JPG" class="card">
+                <img src="../../assets/images/home4.JPG" class="card">
+                <img src="../../assets/images/home5.JPG" class="card">
+                <img src="../../assets/images/home6.JPG" class="card">
+                <img src="../../assets/images/home7.JPG" class="card">
+                <img src="../../assets/images/home3.JPG" class="card">
+                <img src="../../assets/images/home2.JPG" class="card">
+                <img src="../../assets/images/home4.JPG" class="card">
+                <img src="../../assets/images/home6.JPG" class="card">
+                <img src="../../assets/images/home4.JPG" class="card">
+                <img src="../../assets/images/home5.JPG" class="card">
+                <img src="../../assets/images/home2.JPG" class="card">
+                <img src="../../assets/images/home2.JPG" class="card">
+                <img src="../../assets/images/home7.JPG" class="card">
+                <img src="../../assets/images/home5.JPG" class="card">
+                <img src="../../assets/images/home6.JPG" class="card">
+                <img src="../../assets/images/home3.JPG" class="card">
+            </div>
+        </div>
+    </div>
+</div>
