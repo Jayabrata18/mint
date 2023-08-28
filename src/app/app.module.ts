@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -12,7 +11,8 @@ import { MintComponent } from './mint/mint.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
 import { MarqueeComponent } from './marquee/marquee.component';
-
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +28,9 @@ import { MarqueeComponent } from './marquee/marquee.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
