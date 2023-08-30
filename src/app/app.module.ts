@@ -12,6 +12,8 @@ import { MintComponent } from './mint/mint.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
 import { MarqueeComponent } from './marquee/marquee.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { MarqueeComponent } from './marquee/marquee.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
