@@ -17,5 +17,4 @@ export class SearchBarComponent {
       console.log(res);
     });
   }
-
 }
